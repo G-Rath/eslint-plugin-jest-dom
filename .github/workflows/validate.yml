@@ -89,7 +89,7 @@ jobs:
         run: npm install --force typescript@4
 
       - if: ${{ matrix.eslint >= 9 }}
-        run: npm install --force @typescript-eslint/parser@5
+        run: npm install --force @typescript-eslint/parser
 
       - name: ▶️ Run validate script (without linting)
         if: ${{ matrix.eslint != 8 }}
